@@ -1,11 +1,12 @@
 # tensforlow 
 
 标签: 机器学习 TensorFlow
+---
+[TOC]
 
 文章主要讲述tensorflow中几个简单的模型
 
-----
-[TOC]
+
 
 ## 0. Tensorflow Bases
 + datetype with tensorflow
