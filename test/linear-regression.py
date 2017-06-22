@@ -11,7 +11,7 @@ y_data = np.mat(x_data) * w_data + 10 + np.random.randn(M, 1) * 0.33
 
 # define modle and graph
 w = tf.Variable(tf.random_uniform([N, 1], -1, 1))
-w = tf.Variable([[0.],[0.]],tf.float32)
+w = tf.Variable([[0.], [0.]], tf.float32)
 b = tf.Variable(tf.random_uniform([1], -1, 1))
 
 y = tf.matmul(x_data, w) + b
@@ -23,5 +23,5 @@ with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
     for i in range(1000):
         sess.run(train_op)
-        if i%10 == 0:
-            print (sess.run(w).T,sess.run(b))
+        if i % 10 == 0:
+            print (sess.run(w).T, sess.run(b))
