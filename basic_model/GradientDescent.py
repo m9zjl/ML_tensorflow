@@ -21,8 +21,6 @@ for i in range(1000):
         # to see why cost functino is written like this visite Andrew Ng`s video on coursera
         theta = theta - alpha * (theta * x + b - y) * x
         b = b - alpha * (theta * x + b - y)
-    # if i % 100 == 0:
-    #     print theta, b
 plt.plot(np.array(list0), np.array(list1))
 plt.plot(np.array(list0), np.array(list2))
 plt.grid(True)
