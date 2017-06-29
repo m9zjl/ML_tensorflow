@@ -3,7 +3,7 @@
 
 import matplotlib.pyplot as plt
 import numpy as np
-theta = 4
+theta = 0
 b = 5
 # linear regression and the result should be theta around 1 ,b around 0
 x_ = [1, 2, 3, 4, 5, 6, 7]
